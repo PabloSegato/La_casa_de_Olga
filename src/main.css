@@ -1,0 +1,11 @@
+:root {
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+}
+
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: system-ui;
+
+}

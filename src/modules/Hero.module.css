@@ -1,0 +1,96 @@
+:root {
+    --background-conainer: #D7DEDC;
+     --background: #B4DBA9;
+    --background-hover: #92AC86;
+}
+
+
+section{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-conainer);
+    
+
+}
+
+.container {
+   
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../assets/pictures/sierras_merlo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 7px;
+}
+
+.container h3{
+
+    background-color: #92AC8690;
+    border-radius: 20px;
+    padding: 10px;
+
+
+}
+
+.container_buttons{
+    margin-top: 20px;
+    
+}
+
+
+.container_buttons button{
+
+    margin-right: 20px;
+}
+.container_buttons :last-child {
+  background-color: rgba(0, 0, 0, 0.2) ;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid white;
+  font-weight: 1000;
+  cursor: pointer;
+&:hover {
+        transform: scale(1.1);
+    }
+    &:active {
+            transform: scale(1);
+        }
+  
+  
+}
+
+
+.container_buttons :first-child{
+
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid white;
+            font-weight: 1000;
+            cursor: pointer;
+            background-color: #2D4F26;
+            border: none;
+            color: #fff;
+
+    &:hover {
+            background-color: #3A6632;
+            transform: scale(1.1);
+        }
+
+        &:active
+        {
+            transform: scale(1);
+        }
+    
+        
+}

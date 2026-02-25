@@ -1,0 +1,64 @@
+:root {
+    --background-conainer: #D7DEDC
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+}
+
+
+.container{
+display: flex;    
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+padding: 0 20px;
+background-color: var(--background);
+height: 120px;
+h1{
+    font-size: 2.5rem;
+}
+}
+
+
+
+
+
+
+
+.container nav a {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.123); 
+    
+ &:hover{
+    background-color: var(--background-hover);
+    transform: scale(1.1);
+ }
+
+}
+
+
+.container button{
+
+ background-color: #2D4F26;
+ font-size: 1.5rem;
+ color: #fff;
+ border-radius: 12px;
+ padding: 10px;
+ font: 400;
+
+ &:hover{
+    background-color:  #3A6632;
+transform: scale(1.1);
+ }
+   &:active {
+       transform: scale(1);
+   }
+ 
+}
