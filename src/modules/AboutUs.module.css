@@ -1,7 +1,8 @@
 :root {
-    --background-conainer: #D7DEDC;
-    --background: #B4DBA9;
-    --background-hover: #92AC86;
+    --background-container: #D7DEDC;
+    --background-hover: #B4DBA9;
+    --background: #92AC86;
+    --secondary_background: #eeeee7;
 }
 
 .container {
@@ -10,7 +11,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: #eeeee7;
+    background-color: var(--secondary_background);
     align-items: center;
     justify-content: center;
 
@@ -91,7 +92,7 @@ margin: 10px;
 
 div{
 
-background-color: #eeeee7;
+background-color: var(--secondary_background);
 border-radius: 22px;
 height: 100%;
 padding: 15px;

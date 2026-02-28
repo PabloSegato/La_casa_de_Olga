@@ -1,0 +1,27 @@
+:root {
+    --background-container: #D7DEDC;
+    --background-hover: #B4DBA9;
+    --background: #92AC86;
+    --secondary_background: #eeeee7;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary_background);
+    margin-top: 100px;
+     gap: 10px;
+
+
+
+}
+
+.gallery_container {
+    background-color: var(--background);
+    width: 100%;
+    max-width: 1200;
+    height: auto;
+}

@@ -1,10 +1,9 @@
 :root {
-    --background-conainer: #D7DEDC
-    --background: #B4DBA9;
-    --background-hover: #92AC86;
+    --background-container: #D7DEDC;
+    --background-hover: #B4DBA9;
+    --background: #92AC86;
+    --secondary_background: #eeeee7;
 }
-
-
 .container{
 display: flex;    
 align-items: center;
@@ -46,7 +45,7 @@ h1{
 
 .container button{
 
- background-color: #2D4F26;
+ background-color: var(--background);
  font-size: 1.5rem;
  color: #fff;
  border-radius: 12px;
@@ -54,7 +53,7 @@ h1{
  font: 400;
 
  &:hover{
-    background-color:  #3A6632;
+    background-color:  var(--background-hover);
 transform: scale(1.1);
  }
    &:active {

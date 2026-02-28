@@ -1,16 +1,15 @@
 :root {
-    --background-conainer: #D7DEDC;
-     --background: #B4DBA9;
-    --background-hover: #92AC86;
+    --background-container: #D7DEDC;
+    --background-hover: #B4DBA9;
+    --background: #92AC86;
+    --secondary_background: #eeeee7;
 }
-
-
 section{
 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-conainer);
+    background-color: var(--background-container);
     
 
 }
@@ -78,12 +77,12 @@ section{
             border: 1px solid white;
             font-weight: 1000;
             cursor: pointer;
-            background-color: #2D4F26;
+            background-color: var(--background);
             border: none;
             color: #fff;
 
     &:hover {
-            background-color: #3A6632;
+            background-color: var(--background-hover);
             transform: scale(1.1);
         }
 
