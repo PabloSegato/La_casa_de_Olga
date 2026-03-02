@@ -1,10 +1,10 @@
 import styles from "../modules/AboutUs.module.css";
-import svg_medal from "../assets/pictures/best-practices.svg";
-import svg_tree from "../assets/pictures/trees.svg";
-import svg_swim from "../assets/pictures/swin.svg";
-import svg_wifi from "../assets/pictures/wifi.svg";
-import svg_solarium from "../assets/pictures/solarium.svg";
-import svg_parrilla from "../assets/pictures/parrilla.svg";
+import svg_medal from "../assets/pictures/svg/best-practices.svg";
+import svg_tree from "../assets/pictures/svg/trees.svg";
+import svg_swim from "../assets/pictures/svg/swin.svg";
+import svg_wifi from "../assets/pictures/svg/wifi.svg";
+import svg_solarium from "../assets/pictures/svg/solarium.svg";
+import svg_parrilla from "../assets/pictures/svg/parrilla.svg";
 
 import frente from "../assets/pictures/frente_casa.jpg";
 

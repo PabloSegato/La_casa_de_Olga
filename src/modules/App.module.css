@@ -1,0 +1,30 @@
+:root {
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+    --background-main: #F4F1E8;
+    --background-container: #D7DEDC;
+    --text-main: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-accent-green: #76A36B;
+}
+.mainContainer{
+
+background-color: #F4F1E8;
+min-height: 100vh;}
+
+
+
+footer { 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-image: url("../assets/pictures/background.png");
+    background-size: cover;
+    small{
+        margin-right: 20px;
+    }
+    img {
+        margin: 0;
+    height: 240px;
+}}

@@ -1,11 +1,11 @@
 import styles from "../modules/Form.module.css";
-import svg_phone from "../assets/pictures/phone.svg";
-import svg_mail from "../assets/pictures/mail.svg";
-import svg_location from "../assets/pictures/location.svg";
+import svg_phone from "../assets/pictures/svg/phone.svg";
+import svg_mail from "../assets/pictures/svg/mail.svg";
+import svg_location from "../assets/pictures/svg/location.svg";
 
 export default function ContactForm() {
   return (
-    <div className={styles.containermain}>
+    <div className={styles.containerMain}>
       <div className={styles.container}>
         <div className={styles.informacion_propia}>
           <h2>Hacé tu Reserva</h2>

@@ -1,8 +1,11 @@
 :root {
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+    --background-main: #F4F1E8;
     --background-container: #D7DEDC;
-    --background-hover: #B4DBA9;
-    --background: #92AC86;
-    --secondary_background: #eeeee7;
+    --text-main: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-accent-green: #76A36B;
 }
 section{
 
@@ -11,10 +14,14 @@ section{
     justify-content: center;
     background-color: var(--background-container);
     
+    
 
 }
 
 .container {
+
+
+    margin: 20px 0 20px 0;
    
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -28,21 +35,25 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #FFFFFF;
     border-radius: 7px;
 }
 
 .container h3{
 
     background-color: #92AC8690;
+    color: #FFFFFF;
     border-radius: 20px;
     padding: 10px;
+    margin-bottom: 20px;
+    margin-top: -20px;
 
 
 }
 
 .container_buttons{
     margin-top: 20px;
+ 
     
 }
 
@@ -50,46 +61,9 @@ section{
 .container_buttons button{
 
     margin-right: 20px;
-}
-.container_buttons :last-child {
-  background-color: rgba(0, 0, 0, 0.2) ;
-  color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  border: 1px solid white;
-  font-weight: 1000;
-  cursor: pointer;
-&:hover {
-        transform: scale(1.1);
-    }
-    &:active {
-            transform: scale(1);
-        }
-  
-  
-}
-
-
-.container_buttons :first-child{
-
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid white;
-            font-weight: 1000;
-            cursor: pointer;
-            background-color: var(--background);
-            border: none;
-            color: #fff;
-
-    &:hover {
-            background-color: var(--background-hover);
-            transform: scale(1.1);
-        }
-
-        &:active
-        {
-            transform: scale(1);
-        }
+    color: #fff;
+border: 1px solid #FFFFFF;
+    background: transparent;
     
-        
 }
+

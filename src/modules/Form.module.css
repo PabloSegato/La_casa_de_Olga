@@ -1,26 +1,31 @@
 :root {
-  --background-container: #D7DEDC;
-  --background-hover: #B4DBA9;
-  --background: #92AC86;
-  --secondary_background: #eeeee7;
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+    --background-main: #F4F1E8;
+    --background-container: #D7DEDC;
+    --text-main: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-accent: #76A36B;
 }
 
+.containerMain{
+  background-color: var(--background-container);
+  padding: 20px;
+}
 .container {
+  
   display: grid;
   grid-template-columns: 0.6fr 1fr;
-
   max-width: 900px;
   margin: 20px auto;
-  background-color: white;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  font-family: sans-serif;
 }
 
 .informacion_propia {
-  background-color:var(--background-hover);
-  color: black;
+  background-color:var(--background);
+  color: var(--text-main);
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -30,6 +35,7 @@
     margin-right: 10px;
   }
   p{
+    color: var(--text-secondary);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,13 +45,14 @@
 
 .container_form {
   padding: 40px;
-  background-color: var(--background-container);
+  background-color: var(--background-hover);
 }
 
 .formulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  color: var(--text-main);
 }
 
 .formulario label:nth-child(5),
@@ -66,7 +73,7 @@ textarea {
 
 button {
   background-color: var(--background);
-  color: white;
+  color: var(--text-main);
   border: none;
   padding: 15px;
   border-radius: 8px;
@@ -75,8 +82,8 @@ button {
   text-transform: uppercase;
   margin-top: 10px;
   &:hover{
-    color: black;
-    background-color: var(--background-hover);
+    color: #fff;
+    background-color: rgba(0, 128, 0, 0.756);
   }
 
   &:active{

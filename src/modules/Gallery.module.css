@@ -1,8 +1,11 @@
 :root {
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+    --background-main: #F4F1E8;
     --background-container: #D7DEDC;
-    --background-hover: #B4DBA9;
-    --background: #92AC86;
-    --secondary_background: #eeeee7;
+    --text-main: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-accent: #76A36B;
 }
 
 .container {
@@ -11,17 +14,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary_background);
-    margin-top: 100px;
-     gap: 10px;
-
-
-
+    background-color: var(--background-main);
 }
 
 .gallery_container {
-    background-color: var(--background);
+    background-color: var(--background-main);
     width: 100%;
     max-width: 1200;
     height: auto;
+}
+
+.container h1{
+    color: var(--text-main);
+    margin: 20px;
+    font-size: 3rem;
+}
+.container p{
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }

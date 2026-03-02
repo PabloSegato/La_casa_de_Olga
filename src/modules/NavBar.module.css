@@ -1,8 +1,11 @@
 :root {
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+    --background-main: #F4F1E8;
     --background-container: #D7DEDC;
-    --background-hover: #B4DBA9;
-    --background: #92AC86;
-    --secondary_background: #eeeee7;
+    --text-main: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-accent-green: #76A36B;
 }
 .container{
 display: flex;    
@@ -10,10 +13,12 @@ align-items: center;
 flex-direction: row;
 justify-content: space-between;
 padding: 0 20px;
-background-color: var(--background);
-height: 120px;
-h1{
-    font-size: 2.5rem;
+background-image: url("../assets/pictures/background.png");
+height: auto;
+
+img{
+    height: 10rem;
+    width: fit-content;
 }
 }
 
@@ -25,11 +30,16 @@ h1{
 
 .container nav a {
     display: inline-block;
+    background-color: #C2A45C;
+    
     font-size: 1.5rem;
     margin-right: 20px;
     padding: 5px;
     text-decoration: none;
-    color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 14px 28px;
+    font-weight: 500;
     border-right: 1px solid white;
     border-bottom: 2px solid white;
     border-radius: 10px;
