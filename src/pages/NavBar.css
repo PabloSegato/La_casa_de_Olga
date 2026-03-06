@@ -37,7 +37,7 @@
     background-color: var(--background);
         &:hover{ 
                 background-color: var(--background-hover);
-                color: var(--text-secondary);
+                color: #fff;
                 }
         &:active {
                     transform: scale(.9);
@@ -61,6 +61,7 @@ font-size: 1.5rem;
     
         &:hover {
             background-color: var(--background-hover);
+            color: #fff;
         }
         &:active{
             transform: scale(.9);

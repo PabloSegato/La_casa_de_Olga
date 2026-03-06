@@ -1,0 +1,51 @@
+:root {
+    --background: #B4DBA9;
+    --background-hover: #92AC86;
+    --background-main: #F4F1E8;
+    --background-container: #D7DEDC;
+    --text-main: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-accent-green: #76A36B;
+}
+
+.section_container{
+
+background-color: var(--background-container);
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.container{
+
+    background-image: url("../assets/pictures/sierras_merlo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    color: var(--text-main);
+    text-align: center;
+
+h3 {
+
+        background-color: #92AC8690;
+            color: var(--background-main);
+            border-radius: 20px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+}
+}
+.container_text{
+position: initial;
+
+}
+
+
