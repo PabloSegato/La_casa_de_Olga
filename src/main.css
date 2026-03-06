@@ -1,8 +1,11 @@
 :root {
     --background: #B4DBA9;
     --background-hover: #92AC86;
-    --background-main:#F4F1E8;
+    --background-main: #F4F1E8;
     --background-container: #D7DEDC;
+    --text-main: #1A1A1A;
+    --text-secondary: #4A4A4A;
+    --text-accent-green: #76A36B;
 }
 
 *{ 
