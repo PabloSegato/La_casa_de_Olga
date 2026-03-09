@@ -6,16 +6,16 @@ export const NavBar = () => {
     <nav className="nav-container">
       <img className="img-navBar" src={logo} />
       <div>
-        <a className="navigation" href="#">
+        <a className="navigation" href="/">
           Inicio
         </a>
-        <a className="navigation" href="#">
+        <a className="navigation" href="aboutUs">
           Conocenos
         </a>
-        <a className="navigation" href="#">
+        <a className="navigation" href="/gallery">
           Galeria
         </a>
-        <a className="navigation" href="#">
+        <a className="navigation" href="contact">
           Contactanos
         </a>
       </div>
