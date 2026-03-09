@@ -1,0 +1,11 @@
+.gallery_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gallery_container:first-child{
+    height: 100px;
+  
+}

@@ -2,8 +2,42 @@ import styles from "../modules/Form.module.css";
 import svg_phone from "../assets/pictures/svg/phone.svg";
 import svg_mail from "../assets/pictures/svg/mail.svg";
 import svg_location from "../assets/pictures/svg/location.svg";
+import { useState } from "react";
 
 export default function ContactForm() {
+  interface Client {
+    nombre: string;
+    email: string;
+    ingreso: string;
+    egreso: string;
+    mensaje: string;
+  }
+
+  const initialValues: Client = {
+    nombre: "",
+    email: "",
+    ingreso: "",
+    egreso: "",
+    mensaje: "",
+  };
+
+  const [formData, setFormData] = useState<Client>(initialValues);
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    console.log(formData);
+  };
+
+  const handleChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { value, name } = event.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className={styles.containerMain}>
       <div className={styles.container}>
@@ -27,27 +61,42 @@ export default function ContactForm() {
           </p>
         </div>
         <div className={styles.container_form}>
-          <form action="" className={styles.formulario}>
-            <label htmlFor="">
+          <form onSubmit={handleSubmit} className={styles.formulario}>
+            <label>
               NOMBRE
-              <input type="text" placeholder="Ingrese su Nombre completo" />
+              <input
+                type="text"
+                placeholder="Ingrese su Nombre completo"
+                onChange={handleChange}
+                name="nombre"
+              />
             </label>
 
-            <label htmlFor="">
+            <label>
               EMAIL
-              <input type="email" placeholder="Ingrese su email" required />
+              <input
+                type="email"
+                placeholder="Ingrese su email"
+                required
+                onChange={handleChange}
+                name="email"
+              />
             </label>
-            <label htmlFor="">
+            <label>
               CHECK-IN
-              <input type="date" />
+              <input type="date" onChange={handleChange} name="ingreso" />
             </label>
-            <label htmlFor="">
+            <label>
               CHECK-OUT
-              <input type="date" />
+              <input type="date" onChange={handleChange} name="egreso" />
             </label>
-            <label htmlFor="">
+            <label>
               MENSAJE / CONSULTA ESPECIALES
-              <textarea placeholder="¿Cómo podemos ayudarte?"></textarea>
+              <textarea
+                placeholder="¿Cómo podemos ayudarte?"
+                onChange={handleChange}
+                name="mensaje"
+              ></textarea>
             </label>
             <button type="submit">ENVIAR SOLICITUD</button>
           </form>

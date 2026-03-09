@@ -9,7 +9,7 @@
 }
 .mainContainer{
 
-background-color: #F4F1E8;
+background-color:var(--background-main);
 min-height: 100vh;}
 
 

@@ -1,10 +1,10 @@
 import { AboutUs } from "./pages/AboutUs";
-import ContactForm from "./pages/ContactForm";
-import { Gallery } from "./pages/Gallery";
 import { Hero } from "./pages/Hero";
-import { NavBar } from "./pages/NavBar";
 import logo from "./assets/pictures/logo-sin-fondo.png";
 import styles from "./modules/App.module.css";
+import { NavBar } from "./pages/NavBar";
+import { Gallery } from "./pages/Gallery";
+import ContactForm from "./pages/ContactForm";
 
 export const App = () => {
   return (
