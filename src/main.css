@@ -1,18 +1,18 @@
+@import "tailwindcss";
+@plugin 'lightswind/plugin';
 :root {
-    --background: #B4DBA9;
-    --background-hover: #92AC86;
-    --background-main: #F4F1E8;
-    --background-container: #D7DEDC;
-    --text-main: #1A1A1A;
-    --text-secondary: #4A4A4A;
-    --text-accent-green: #76A36B;
+  --background: #b4dba9;
+  --background-hover: #92ac86;
+  --background-main: #f4f1e8;
+  --background-container: #d7dedc;
+  --text-main: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-accent-green: #76a36b;
 }
 
-*{ 
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: system-ui;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
 }
